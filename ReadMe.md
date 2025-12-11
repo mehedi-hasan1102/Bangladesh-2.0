@@ -3,12 +3,12 @@
 Live Preview:
 https://mehedi-hasan1102.github.io/Bangladesh-2.0
 
-Overview
+*Overview*
 
 Bangladesh 2.0 is a modern, visually engaging web project built using HTML and CSS, showcasing a conceptual vision of a future, innovative Bangladesh.
 The project highlights clean layout structure, responsive sections (if applicable), and UI elements that reflect national identity and progress.
 
-Features
+*Features*
 
 Simple and clean UI/UX design
 
