@@ -1,33 +1,38 @@
-/* font  */
+/* ===============================
+   FONTS
+================================ */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100..900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
-/* reset  */
-
+/* ===============================
+   RESET
+================================ */
 * {
-  margin: 0px;
-  padding: 10px;
-  box-sizing: border-box;
-  font-family: "Fira Sans", sans-serif;
-  
-  
-
-}
-
-/* shared style  */
-
-body {
-  line-height: 1.6;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h5 {
-  color: #333;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
+/* ===============================
+   GLOBAL STYLES
+================================ */
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+section {
+  padding: 3rem 1.5rem;
+}
+
+h1, h2, h3, h5 {
+  color: #333;
 }
 
 p {
@@ -37,212 +42,123 @@ p {
 button {
   cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 10px 20px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: white;
   background-color: #28a745;
-
+  transition: 0.3s;
 }
 
 button:hover {
   background-color: #218838;
 }
 
-
-
-
-/* banner  */
-
-
+/* ===============================
+   HERO / BANNER
+================================ */
 .banner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-radius: 24px;
+  justify-content: space-between;
+  gap: 2rem;
   background: rgb(198, 228, 214);
-  width: 100%;
-  margin: 0 auto;
-  height: auto;
-  min-height: 50vh;
-}
-
-.banner img {
-  width: 70%;
   border-radius: 24px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem;
 }
 
 .banner h1 {
   font-size: 2.5rem;
-  font-weight: bold;
-  color: #333;
 }
 
 .banner h5 {
-  font-size: 1.5rem;
-  font-weight: Normal;
-  color: grey
+  font-size: 1.4rem;
+  color: gray;
 }
 
-
-/* vision  */
+/* ===============================
+   VISION
+================================ */
 .vision {
-  background-color: #fff;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .vision-cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
 .vision-card {
-  flex: 1;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  text-align: center;
+  padding: 1.5rem;
   border-radius: 24px;
+  text-align: center;
 }
 
-.card-1 {
-  background-color: rgba(84, 144, 245, 0.2);
-}
+.card-1 { background: rgba(84,144,245,0.2); }
+.card-2 { background: rgb(198,228,214); }
+.card-3 { background: rgb(247,235,207); }
 
-.card-2 {
-  background-color: rgb(198, 228, 214);
-}
+.card-1 button { background: rgb(84,144,245); }
+.card-2 button { background: rgb(9,161,92); }
+.card-3 button { background: rgb(255,194,57); }
 
-.card-3 {
-  background-color: rgb(247, 235, 207);
-}
-
-.card-1 button {
-  border-radius: 8px;
-  background: rgb(84, 144, 245);
-}
-
-.card-1 button:hover {
-  background: rgb(60, 120, 220);
-}
-
-.card-2 button {
-  border-radius: 8px;
-  background: rgb(9, 161, 92);
-}
-
-.card-2 button:hover {
-  background: rgb(7, 130, 75);
-}
-
-.card-3 button {
-  border-radius: 8px;
-  background: rgb(255, 194, 57);
-}
-
-.card-3 button:hover {
-  background: rgb(230, 170, 50);
-}
-
-
-
-/* quote */
-
+/* ===============================
+   QUOTE
+================================ */
 .quote {
-  font-weight: normal;
-  background: url("../img/quote-bg.png") no-repeat;
-  background-position: 10px 10px;
+  max-width: 900px;
+  margin: auto;
+  background: url("../img/quote-bg.png") no-repeat 10px 10px;
   background-size: 30px;
-  padding: 20px;
-  box-sizing: border-box;
-  border: 1px solid rgba(14, 14, 14, 0.15);
+  padding: 2rem;
+  border: 1px solid rgba(14,14,14,0.15);
   border-radius: 16px;
-  margin-left: 20px;
-  margin-right: 20px;
-
 }
 
 .Aurthor {
-  font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  font-size: 1.1rem;
 }
 
-/* News Section */
-
+/* ===============================
+   NEWS
+================================ */
 .news {
-  padding: 2rem;
-
-
-  border-radius: 10px;
-
-}
-
-.recent-news {
-  padding: 2rem;
-  background-color: #f5f5f5;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .news-card {
-  border: 1px solid rgba(14, 14, 14, 0.15);
-  gap: 1rem;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-radius: 24px;
   display: flex;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 24px;
+  background: white;
+  border: 1px solid rgba(14,14,14,0.15);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
-
-
-
-
 
 .news-content {
-  width: auto;
-  height: 250px;
+  flex: 2;
 }
 
-.news-card a {
-
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  color: white;
-  background-color: #28a745;
-
-}
-
-.news-card a:hover {
-  background-color: #218838;
+.satalite {
+  flex: 1;
 }
 
 .meta {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 400px;
+  font-size: 0.9rem;
 }
 
-
-.meta img {
-  width: auto;
-  height: 50px;
-}
-
-.satalite img {
-  border-radius: 24px;
-}
-
-/* Donate Section */
+/* ===============================
+   DONATE
+================================ */
 .donate {
-  padding: 2rem;
   text-align: center;
 }
 
@@ -250,105 +166,110 @@ button:hover {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
 }
 
 .donate-card {
-  padding: 1.5rem;
-  background-color: skyblue; 
-  border-radius: 10px;
+  padding: 1.2rem 2rem;
+  background: skyblue;
+  border-radius: 12px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  font-size: 1.2rem;
-  color: #333;
+  min-width: 140px;
 }
-
-.donate-card:hover {
-  background-color: deepskyblue;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-
-
 
 .donate input {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 440px;
+  width: 100%;
+  max-width: 420px;
   height: 40px;
-  outline: none;
-  transition: 0.3s;
+  margin-bottom: 1rem;
+  padding: 10px;
 }
 
-.donate input:focus {
-  border-color: #333;
-  box-shadow: 0 0 5px black(0, 123, 255, 0.5);
-}
-
-.donate button {
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  color: white;
-  background-color: #28a745;
-
-}
-
-.donate button:hover {
-  background-color: #218838;
-}
-
-
-/* newsletter */
-
-
+/* ===============================
+   NEWSLETTER
+================================ */
 .newsletter {
-  background-color: rgb(198, 228, 214);
-  padding: 40px 20px;
+  background: rgb(198, 228, 214);
   text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 
 .newsletter form {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin: 1.5rem 0;
 }
 
-.newsletter input[type="email"] {
+.newsletter input {
   padding: 10px;
-  font-size: 1rem;
+  width: 280px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-right: none;
-  border-radius: 5px 0 0 5px;
-  /* flex: 3; Ensures balanced proportions with the button */
-  outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.newsletter input[type="email"]:focus {
-  border-color: #333;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+/* ===============================
+   TABLET (≤1024px)
+================================ */
+@media (max-width: 1024px) {
+
+  .vision-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news-card {
+    flex-direction: column;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-.newsletter-form button {
-  cursor: pointer;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: white;
-  background-color: #28a745;
+/* ===============================
+   MOBILE (≤768px)
+================================ */
+@media (max-width: 768px) {
 
-  transition: background-color 0.3s ease;
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .vision-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-card {
+    width: 100%;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
-.newsletter-form button:hover {
-  background-color: #218838;
+/* ===============================
+   SMALL MOBILE (≤480px)
+================================ */
+@media (max-width: 480px) {
+
+  .banner h1 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
 }
